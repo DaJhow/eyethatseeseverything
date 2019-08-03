@@ -1,0 +1,34 @@
+RewriteEngine On
+
+# Quickregister Rules
+ErrorDocument 400 /error.php
+ErrorDocument 401 /error.php
+ErrorDocument 403 /error.php
+ErrorDocument 404 /error.php
+ErrorDocument 500 /error.php
+
+RewriteRule ^index(|/)$ ./index.php
+RewriteRule ^account(|/)$ ./account.php
+RewriteRule ^account/(..*)$ ./account.php?item=$1
+RewriteRule ^news/(..*)$ ./news.php?url=$1
+RewriteRule ^banned(|/)$ ./banned.php
+RewriteRule ^hotel(|/)$ ./hotel.php
+RewriteRule ^mantenimiento(|/)$ ./mantenimiento.php
+RewriteRule ^me(|/)$ ./me.php
+RewriteRule ^home/(..*)$ ./home.php?idd=$1
+RewriteRule ^group/(..*)$ ./group.php?idd=$1
+RewriteRule ^refer/(..*)$ ./refer.php?n=$1
+RewriteRule ^leaderboards(|/)$ ./leaderboards.php
+RewriteRule ^register(|/)$ ./register.php
+RewriteRule ^shop(|/)$ ./shop.php
+RewriteRule ^staff(|/)$ ./staff.php
+RewriteRule ^community(|/)$ ./community.php
+RewriteRule ^store(|/)$ ./store.php
+RewriteRule ^way(|/)$ ./way.php
+RewriteRule ^toolbar(|/)$ ./toolbar.php
+RewriteRule ^rooms(|/)$ ./rooms.php
+RewriteRule ^disabled(|/)$ ./disabled.php
+RewriteRule ^youtubevideo(|/)$ ./youtubevideo.php
+RewriteRule ^groups(|/)$ ./groups.php
+RewriteRule ^rooms(|/)$ ./rooms.php
+RewriteRule ^onlines(|/)$ ./onlines.php

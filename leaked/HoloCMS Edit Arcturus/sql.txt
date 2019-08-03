@@ -1,0 +1,29 @@
+SET @@global.sql_mode = '';
+
+ALTER TABLE `users` CHANGE `password` `password` VARCHAR(65) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
+ALTER TABLE `users` ADD `passcode` VARCHAR(65) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL AFTER `password`;
+ALTER TABLE `users` ADD `user_style` VARCHAR(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT 'none' AFTER `rank`;
+ALTER TABLE `users` ADD `discord_name` VARCHAR(100) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL AFTER `user_style`;
+ALTER TABLE `users` ADD `accept_rules` ENUM('0','1') CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL DEFAULT '0' AFTER `discord_name`;
+ALTER TABLE `users` ADD `account_disabled` ENUM('0','1') CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL DEFAULT '0' AFTER `mail_verified`;
+ALTER TABLE `rooms` CHANGE `name` `name` VARCHAR(50) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL;
+
+DROP TABLE IF EXISTS `cms_news`;
+CREATE TABLE IF NOT EXISTS `cms_news` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(300) NOT NULL,
+  `image` varchar(500) NOT NULL,
+  `shortstory` text NOT NULL,
+  `longstory` text NOT NULL,
+  `author` varchar(200) NOT NULL DEFAULT 'Hotel',
+  `date` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+DROP TABLE IF EXISTS `cms_mantenimiento`;
+CREATE TABLE IF NOT EXISTS `cms_mantenimiento` (
+  `id` int(11) unsigned NOT NULL,
+  `mantenimiento` enum('0','1') DEFAULT '0',
+  `motivo` longtext NOT NULL,
+  `dia` varchar(255) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;

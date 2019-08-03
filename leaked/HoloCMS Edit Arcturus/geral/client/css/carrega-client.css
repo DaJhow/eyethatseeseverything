@@ -1,0 +1,162 @@
+.carrega,
+.carrega .carrega-bg {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.carrega {
+    position: fixed;
+}
+
+.carrega .carrega-error-color {
+    background: #250B0A
+}
+
+.carrega .carrega-bg {
+    background-image: url(/geral/client/img/fundo.png);
+    position: absolute;
+
+}
+
+.carrega .carrega-image {
+    background-image: url(/geral/client/img/logo.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 422px;
+    height: 320px;
+    top: 50%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    image-rendering: pixelated;
+    z-index: 200
+}
+
+.carrega-frank {
+    background-image: url(/geral/client/img/frank.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 422px;
+    height: 320px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    image-rendering: pixelated;
+    z-index: 200
+}
+
+.carrega .carrega-loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center
+}
+
+.carrega .carrega-loading .carrega-loading-bar {
+    background-color: rgb(199, 199, 199);
+    border: 0px solid rgba(18, 18, 18,0.3);
+    border-radius: 50px;
+    padding: 4px;
+    height: 18px;
+    margin-bottom: 0px;
+}
+
+.carrega .carrega-loading .carrega-loading-bar .carrega-loading-bar-inner-bar {
+    background: -moz-linear-gradient(top, rgb(102, 192, 75) 50%, rgb(102, 192, 75) 50%, rgb(102, 192, 75) 50%);
+
+background: linear-gradient(to bottom, rgb(102, 192, 75) 50%, rgb(88, 176, 62) 50%, rgb(88, 176, 62) 50%);
+
+height: 18px;
+
+border-radius: 50px;
+
+transition: width .4s ease-in-out;
+
+width: 0;
+}
+
+.carrega .carrega-loading .carrega-loading-heading {
+    color: #999;
+    font-size: 19.5pt;
+    margin-bottom: 10px;
+    font-weight: 500
+}
+
+.carrega .carrega-loading .carrega-loading-percentage {
+    color: #999;
+    margin-top: 9px;
+    font-weight: 500;
+    font-size: 10pt
+}
+
+.carrega .erro-img {
+    background-image: url(/geral/client/img/erro.png);
+    width: 220px;
+    height: 197px;
+    opacity: 0.40;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 35%;
+    left: calc(50%);
+    transform: translate(-50%, -50%);
+    image-rendering: optimizeSpeed;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    z-index: 200
+}
+
+.carrega .carrega-error {
+    position: absolute;
+    width: 450px;
+    top: calc(35% + 70px);
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: left;
+    color: rgb(125, 125, 125);
+    font-size: 12pt;
+    max-width: calc(100% - 20px)
+}
+
+.carrega .carrega-error a {
+    color: rgb(125, 125, 125);
+    text-decoration: none !important;
+    border-bottom: 1px solid rgb(125, 125, 125);
+    padding-bottom: 2px
+}
+
+.carrega .carrega-error a:hover {
+    color: #e6e6e6
+}
+
+.carrega .carrega-error a:active {
+    border: none
+}
+
+.carrega .carrega-error .carrega-error-heading {
+
+}
+
+.carrega .carrega-error .carrega-error-muted {
+    font-size: 10pt;
+    margin-top: 10px
+}
+
+.carrega-error-image {
+    background-image: url(/geral/client/img/frank.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 422px;
+    height: 371px;
+    top: 50%;
+    left: 23%;
+    transform: translate(-50%, -50%);
+    image-rendering: pixelated;
+    z-index: 200
+}
+

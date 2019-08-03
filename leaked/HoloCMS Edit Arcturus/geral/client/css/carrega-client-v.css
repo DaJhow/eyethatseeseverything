@@ -1,0 +1,182 @@
+.carrega,
+.carrega .carrega-bg {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+.carrega .carrega-bg {
+    background-image: url(/geral/client/img/fundo.png);
+    position: absolute;
+    background-size: cover;
+    image-rendering: optimizeSpeed;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated
+}
+
+.carrega .carrega-image {
+    background-image: url(/geral/client/img/logo.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 422px;
+    height: 320px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    image-rendering: pixelated;
+    z-index: 200
+}
+
+.carrega-frank {
+    background-image: url(/geral/client/img/frankvr.png);
+    background-position: center center;
+    position: relative;
+    width: 240px;
+    height: 384px;
+margin-top: 90px;
+margin-left:-790px;
+    image-rendering: pixelated;
+    z-index: 200
+}
+.erro-frank {
+    background-image: url(/geral/client/img/frank-erro.png);
+    background-position: center center;
+    position: relative;
+    width: 181px;
+    height: 267px;
+margin-top: 190px;
+margin-left:-670px;
+    image-rendering: pixelated;
+    z-index: 200
+}
+
+.escolher {
+    height: 184px;
+    margin-top:-130px;
+        image-rendering: pixelated;
+    z-index: 200
+}
+
+.escolher-titulo {
+    position: absolute;
+    color: #999;
+    font-size: 19.5pt;
+    margin-top:90px;
+    margin-left:223px;
+    font-weight: 500;
+    text-align: center
+}
+
+.erro-titulo {
+    position: absolute;
+    color: #999;
+    font-size: 19.5pt;
+    margin-top:60px;
+    margin-left:223px;
+    font-weight: 500;
+    text-align: center
+}
+
+.escolher-info {
+    position: absolute;
+    color: #999;
+    font-size: 11pt;
+    margin-top:130px;
+    margin-left:223px;
+    width: 450px;
+    text-align: left
+}
+
+.erro-info {
+    position: absolute;
+    color: #999;
+    font-size: 11pt;
+    margin-top:100px;
+    margin-left:223px;
+    width: 450px;
+    text-align: left
+}
+
+.carrega .carrega-loading {
+    position: absolute;
+    width: 450px;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center
+}
+
+.carrega .carrega-loading .carrega-loading-bar {
+    background-color: rgb(18, 18, 18);
+    border: 0px solid rgb(18, 18, 18);
+    border-radius: 2px;
+    padding: 3px;
+    height: 24px;
+    opacity: 0.5;
+    margin-bottom: 0px
+}
+
+.carrega .carrega-loading .carrega-loading-bar .carrega-loading-bar-inner-bar {
+
+    background: -moz-linear-gradient(top, rgb(104, 60, 136) 50%, rgb(104, 60, 136) 50%, rgb(104, 60, 136) 50%);
+    background: linear-gradient(to bottom, rgb(117, 68, 153) 50%, rgb(117, 68, 153) 50%, rgb(117, 68, 153) 50%);
+    height: 18px;
+    border-radius: 2px;
+    transition: width .4s ease-in-out;
+    width: 0
+}
+
+.carrega .carrega-loading .carrega-loading-heading {
+    color: #999;
+    font-size: 19.5pt;
+    margin-bottom: 10px;
+    font-weight: 500
+}
+
+.carrega .carrega-loading .carrega-loading-percentage {
+    color: #999;
+    margin-top: 9px;
+    font-weight: 500;
+    font-size: 10pt
+}
+
+.carrega .erro-img {
+    background-image: url(/geral/client/img/erro.png);width:220px;height:197px;opacity: 0.40; background-position:center center;background-repeat:no-repeat;position:absolute;top:35%;left:calc(50%);transform:translate(-50%,-50%);image-rendering:optimizeSpeed;image-rendering:crisp-edges;image-rendering:pixelated;z-index:200}
+
+        .carrega .carrega-error {
+        position: absolute;
+        width: 450px;
+        top: calc(35% + 120px);
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        color: #fff;
+        font-size: 12pt;
+        max-width: calc(100% - 20px)
+    }
+
+    .carrega .carrega-error a {
+        color: #fff;
+        text-decoration: none !important;
+        border-bottom: 1px solid #fff;
+        padding-bottom: 2px
+    }
+
+    .carrega .carrega-error a:hover {
+        color: #e6e6e6
+    }
+
+    .carrega .carrega-error a:active {
+        border: none
+    }
+
+    .carrega .carrega-error .carrega-error-heading {
+    }
+
+    .carrega .carrega-error .carrega-error-muted {
+        font-size: 10pt;
+        margin-top: 10px
+    }

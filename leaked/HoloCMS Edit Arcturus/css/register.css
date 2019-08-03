@@ -1,0 +1,124 @@
+body {
+	background-color: #ececec;
+}
+
+.alert-wrapper {
+	width: 1000px;
+	text-align: center;
+}
+
+
+.alert.information {
+	background-color: #ffffff;
+	border-radius: 0.5rem;
+	margin-bottom: 25px;
+	-webkit-box-shadow: 0px 0px 38px -9px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 0px 38px -9px rgba(0,0,0,0.5);
+	box-shadow: 0px 0px 38px -9px rgba(0,0,0,0.5);
+}
+
+.index-wrapper {
+	display: flex;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 1140px;
+	margin: 0 auto;
+}
+
+.register-wrapper {
+	display: flex;
+	align-items: center;
+	width: 1000px;
+	padding: 0!important;
+	-webkit-box-shadow: 0px 0px 38px -9px rgba(0,0,0,0.8);
+	-moz-box-shadow: 0px 0px 38px -9px rgba(0,0,0,0.8);
+	box-shadow: 0px 0px 38px -9px rgba(0,0,0,0.8);
+	border-radius: 0.5rem;
+}
+
+.register-left {
+	background-image: url(../../img/website/index/register-banner.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	border-radius: 0.5rem 0 0 0.5rem;
+	min-height: 565px;
+}
+
+.logo {
+	background-image: url(../../img/website/index/logo-index.png);
+	width: 167px;
+	height: 92px;
+	display: block;
+	margin: 0 0 2rem 0;
+}
+
+.login-button {
+	padding: 0.5rem 1.9rem;
+	width: 100%;
+	margin: 0;
+}
+
+.register-button {
+	padding: 0.8rem 2.2rem;
+	font-size: 140%;
+}
+
+.form-control {
+	padding: 1.5rem 3rem;
+	margin-right: .8rem;
+	font-size: 1.2rem;
+	border-radius: 0.4rem;
+	border: 0.15rem solid #-d8d8d8;
+}
+
+.form-control.username-input {
+	background-image: url(../../img/website/icons/username.gif);
+	background-repeat: no-repeat;
+	background-position: 6% center;
+}
+
+.form-control.password-input {
+	background-image: url(../../img/website/icons/password.gif);
+	background-repeat: no-repeat;
+	background-position: 6% center;
+}
+
+.form-control.email-input {
+	background-image: url(../../img/website/icons/email.gif);
+	background-repeat: no-repeat;
+	background-position: 6% center;
+}
+
+.form-control.passcode-input {
+	background-image: url(../../img/website/icons/passcode.gif);
+	background-repeat: no-repeat;
+	background-position: 6% center;
+}
+
+.register-right {
+	background-color: #ffffff;
+	padding: 45px;
+	border-radius: 0 0.5rem 0.5rem 0;
+	min-height: 450px;
+}
+
+.index-footer {
+	margin: 2rem;
+	width: 990px;
+}
+
+.footer-link {
+	font-size: 250%;
+	padding: 0 5px;
+}
+.footer-link.discord {
+	color: #7289DA;
+}
+.footer-link.twitter {
+	color: #38A1F3;
+}
+.footer-link.forum {
+	color: #c9344d;
+}

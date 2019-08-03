@@ -1,0 +1,234 @@
+#flash-container,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0
+}
+
+#client-ui {
+    height: 100%
+}
+
+#flash-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden
+}
+
+body {
+    margin: 0;
+    background: #000;
+    color: #7ecaee;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    font-family: Ubuntu, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+    font-size: 16px;
+    font-variant-ligatures: common-ligatures;
+    line-height: 1.4;
+    min-height: 100vh;
+}
+
+.client-error {
+    max-width: 480px;
+}
+
+.client-error__title {
+    text-align: center;
+}
+
+.client-error__flash {
+    background-image: url('../img/flash.png');
+    display: inline-block;
+    height: 39px;
+    margin: 12px 12px 0;
+    width: 158px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #fff;
+    font-family: "Ubuntu Condensed", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+    font-weight: 400;
+    margin: .6em 0;
+    line-height: 1.2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    text-transform: uppercase;
+}
+
+p {
+    margin: .75em 0;
+}
+
+a {
+    color: #fff;
+    cursor: pointer;
+    outline: 0;
+    text-decoration: none;
+}
+
+
+.c-b {
+    height: 40px;
+    width: 176px;
+    margin-top: 10px;
+    margin-left: 10px;
+    float: left;
+    position: relative;
+    z-index: 5;
+    padding: 4px;
+    cursor: pointer;
+    z-index:99999;
+}
+
+.b-c-i {
+    position: fixed;
+    width: 104px;
+    height: 37px;
+    left:32px;
+    color:#fff;
+    background: url('/geral/imagens/sprite_n.png') -579px -169px;
+    box-shadow: 0px 3px 0 #00000029;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.b-c-i .b-c-i-p {
+    position: fixed;
+    width: 18px;
+    height: 35px;
+    left:14px;
+    top:15px;
+    color:#fff;
+    background: url('/geral/imagens/sprite_n.png') -560px -170px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.bci-p {
+    position: fixed;
+    width: 104px;
+    height: 37px;
+    left:32px;
+    color:#fff;
+    background: url('/geral/imagens/sprite_n.png') -579px -169px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.b-c-i:hover {
+    background: url('/geral/imagens/sprite_n.png') -579px -210px;
+}
+
+.b-c-i:hover .b-c-i-p {
+    background: url('/geral/imagens/sprite_n.png') -560px -211px;
+}
+
+.b-c-i:active {
+    margin-top: 1px;
+    box-shadow: 0px 2px #00000029;
+}
+
+.b-c-i:active .b-c-i-p {
+    margin-top: 1px;
+    
+}
+
+#bci-text {padding: 8px;margin-left:19px;text-align: center; font-size: 15px;}
+
+#b-c-f {
+    width: 36px;
+    height: 37px;
+    position: fixed;
+    left: 140px;
+    background: url('/geral/imagens/sprite_n.png') -685px -169px;
+    box-shadow: 0px 3px #00000029;
+}
+
+#b-c-f:hover {
+    background: url('/geral/imagens/sprite_n.png') -685px -210px;
+}
+
+#b-c-f:active {
+    margin-top: 1px;
+    box-shadow: 0px 2px #00000029;
+}
+
+#b-c-r {
+    position: fixed;
+    width: 36px;
+    height: 37px;
+    left: 180px;
+    background: url('/geral/imagens/sprite_n.png') -723px -169px;
+    border-radius: 0px 5px 5px 0px;
+    box-shadow: 0px 3px #00000029;
+}
+
+#b-c-r:hover {
+    background: url('/geral/imagens/sprite_n.png') -723px -210px;
+}
+
+#b-c-r:active {
+    margin-top: 1px;
+    box-shadow: 0px 2px #00000029;
+}
+.escolher-titulo {
+    position: absolute;
+    color: #999;
+    font-size: 19.5pt;
+    margin-top:-90px;
+    margin-left:20px;
+    font-weight: 500;
+    text-align: center
+}
+
+.escolher-info {
+    position: absolute;
+    color: #999;
+    font-size: 11pt;
+    margin-top:-30px;
+    margin-left:20px;
+    width: 450px;
+    text-align: left
+}
+#b-c-plug {
+    position: fixed;
+    width: 77px;
+    height: 37px;
+    left: 138px;
+    background: url('/geral/imagens/sprite_n.png') -763px -169px;
+    box-shadow: 0px 3px #00000029;
+}
+
+#b-c-plug:hover {
+    background: url('/geral/imagens/sprite_n.png') -763px -210px;
+}
+
+#b-c-plug:active {
+    margin-top: 1px;
+    box-shadow: 0px 2px #00000029;
+}

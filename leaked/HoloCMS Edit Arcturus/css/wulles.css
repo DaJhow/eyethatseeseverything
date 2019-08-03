@@ -1,0 +1,268 @@
+@font-face{
+    font-family:'Ubuntu Habbo';
+    src:url(/fonts/UbuntuHabbo.2f484259.woff2) format("woff2"),url(/fonts/UbuntuHabbo.2af43356.woff) format("woff");
+    unicode-range:U+007C,U+2020,U+2022,U+00B6,U+00B1,U+00A5,U+00B5,U+00AA,U+00BA,U+00AC,U+0192,U+00BB,U+2014,U+2018,U+2021
+}
+@font-face{
+    font-family:Ubuntu;
+    font-style:normal;
+    font-weight:400;
+    src:local("Ubuntu Regular"),local("Ubuntu-Regular"),url(/fonts/UbuntuRegular-cyrillic-ext.d723d092.woff2) format("woff2");
+    unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F
+}
+@font-face{
+    font-family:Ubuntu;
+    font-style:normal;
+    font-weight:400;
+    src:local("Ubuntu Regular"),local("Ubuntu-Regular"),url(/fonts/UbuntuRegular-cyrillic.7d140bbc.woff2) format("woff2");
+    unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116
+}
+@font-face{
+    font-family:Ubuntu;
+    font-style:normal;
+    font-weight:400;
+    src:local("Ubuntu Regular"),local("Ubuntu-Regular"),url(/fonts/UbuntuRegular-greek-ext.1da53789.woff2) format("woff2");
+    unicode-range:U+1F00-1FFF
+}
+@font-face{
+    font-family:Ubuntu;
+    font-style:normal;
+    font-weight:400;
+    src:local("Ubuntu Regular"),local("Ubuntu-Regular"),url(/fonts/UbuntuRegular-greek.a9ad763d.woff2) format("woff2");
+    unicode-range:U+0370-03FF
+}
+@font-face{
+    font-family:Ubuntu;
+    font-style:normal;
+    font-weight:400;
+    src:local("Ubuntu Regular"),local("Ubuntu-Regular"),url(/fonts/UbuntuRegular-latin-ext.487f8007.woff2) format("woff2");
+    unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF
+}
+@font-face{
+    font-family:Ubuntu;
+    font-style:normal;
+    font-weight:400;
+    src:local("Ubuntu Regular"),local("Ubuntu-Regular"),url(/fonts/UbuntuRegular-latin.246ea4b3.woff2) format("woff2");
+    unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD
+}
+@font-face{
+    font-family:Ubuntu;
+    font-style:normal;
+    font-weight:700;
+    src:local("Ubuntu Bold"),local("Ubuntu-Bold"),url(/fonts/UbuntuBold-cyrillic-ext.10583d86.woff2) format("woff2");
+    unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F
+}
+@font-face{
+    font-family:Ubuntu;
+    font-style:normal;
+    font-weight:700;
+    src:local("Ubuntu Bold"),local("Ubuntu-Bold"),url(/fonts/UbuntuBold-cyrillic.a90551a4.woff2) format("woff2");
+    unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116
+}
+@font-face{
+    font-family:Ubuntu;
+    font-style:normal;
+    font-weight:700;
+    src:local("Ubuntu Bold"),local("Ubuntu-Bold"),url(/fonts/UbuntuBold-greek-ext.1dd1baf4.woff2) format("woff2");
+    unicode-range:U+1F00-1FFF
+}
+@font-face{
+    font-family:Ubuntu;
+    font-style:normal;
+    font-weight:700;
+    src:local("Ubuntu Bold"),local("Ubuntu-Bold"),url(/fonts/UbuntuBold-greek.0e15cf32.woff2) format("woff2");
+    unicode-range:U+0370-03FF
+}
+@font-face{
+    font-family:Ubuntu;
+    font-style:normal;
+    font-weight:700;
+    src:local("Ubuntu Bold"),local("Ubuntu-Bold"),url(/fonts/UbuntuBold-latin-ext.570523d0.woff2) format("woff2");
+    unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF
+}
+@font-face{
+    font-family:Ubuntu;
+    font-style:normal;
+    font-weight:700;
+    src:local("Ubuntu Bold"),local("Ubuntu-Bold"),url(/fonts/UbuntuBold-latin.78f61240.woff2) format("woff2");
+    unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD
+}
+@font-face{
+    font-family:'Ubuntu Condensed';
+    font-style:normal;
+    font-weight:400;
+    src:local("Ubuntu Condensed"),local("UbuntuCondensed-Regular"),url(/fonts/UbuntuCondensed-cyrillic-ext.7196fbec.woff2) format("woff2");
+    unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F
+}
+@font-face{
+    font-family:'Ubuntu Condensed';
+    font-style:normal;
+    font-weight:400;
+    src:local("Ubuntu Condensed"),local("UbuntuCondensed-Regular"),url(/fonts/UbuntuCondensed-cyrillic.fef0bea2.woff2) format("woff2");
+    unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116
+}
+@font-face{
+    font-family:'Ubuntu Condensed';
+    font-style:normal;
+    font-weight:400;
+    src:local("Ubuntu Condensed"),local("UbuntuCondensed-Regular"),url(/fonts/UbuntuCondensed-greek-ext.9227336a.woff2) format("woff2");
+    unicode-range:U+1F00-1FFF
+}
+@font-face{
+    font-family:'Ubuntu Condensed';
+    font-style:normal;
+    font-weight:400;
+    src:local("Ubuntu Condensed"),local("UbuntuCondensed-Regular"),url(/fonts/UbuntuCondensed-greek.cf6c8c10.woff2) format("woff2");
+    unicode-range:U+0370-03FF
+}
+@font-face{
+    font-family:'Ubuntu Condensed';
+    font-style:normal;
+    font-weight:400;
+    src:local("Ubuntu Condensed"),local("UbuntuCondensed-Regular"),url(/fonts/UbuntuCondensed-latin-ext.840c3535.woff2) format("woff2");
+    unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF
+}
+@font-face{
+    font-family:'Ubuntu Condensed';
+    font-style:normal;
+    font-weight:400;
+    src:local("Ubuntu Condensed"),local("UbuntuCondensed-Regular"),url(/fonts/UbuntuCondensed-latin.4c3c2872.woff2) format("woff2");
+    unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD
+}
+::-webkit-scrollbar-track {
+    background-color: #F4F4F4;
+}
+::-webkit-scrollbar {
+    width: 6px;
+    background: #F4F4F4;
+}
+::-webkit-scrollbar-thumb {
+    background: #dad7d7;
+}
+.room-item__title{
+    font-family:"Ubuntu Habbo","Ubuntu Condensed";
+}
+.profile__motto,.room-item__description{
+    font-family:"Ubuntu Habbo",Ubuntu
+}
+.user-style.none{
+}
+.user-style.slushy{
+    background-image:-webkit-gradient( linear,left top,right top,color-stop(0,#ff1493),color-stop(0.15,#ff1493),color-stop(0.3,#00bfff),color-stop(0.45,#00bfff),color-stop(0.6,#ff1493),color-stop(0.75,#ff1493),color-stop(0.9,#00bfff),color-stop(1,#00bfff) );
+    -webkit-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color:transparent
+}
+.user-style.rainbow{
+    background-image:-webkit-gradient( linear,left top,right top,color-stop(0,#950707),color-stop(0.15,#bf7017),color-stop(0.3,#f2ec2f),color-stop(0.45,#218309),color-stop(0.6,#2681c9),color-stop(0.75,#480979));
+    -webkit-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color:transparent
+}
+.user-style.rainbowold{
+    background-image:-webkit-gradient( linear,left top,right top,color-stop(0,#f22),color-stop(0.15,#f2f),color-stop(0.3,#22f),color-stop(0.45,#2ff),color-stop(0.6,#2f2),color-stop(0.75,#2f2),color-stop(0.9,#ff2),color-stop(1,#f22) );
+    -webkit-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color:transparent
+}
+.user-style.orangeblue{
+    background-image:-webkit-gradient( linear,left top,right top,color-stop(0,#FF5722),color-stop(0.15,#FF5722),color-stop(0.3,#FF5722),color-stop(0.45,#FF5722),color-stop(0.6,#2196F3),color-stop(0.75,#2196F3),color-stop(0.9,#2196F3),color-stop(1,#2196F3) );
+    -webkit-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color:transparent
+}
+.user-style.purplepink{
+    background-image:-webkit-gradient( linear,left top,right top,color-stop(0,#5A33B7),color-stop(0.15,#5A33B7),color-stop(0.3,#5A33B7),color-stop(0.45,#5A33B7),color-stop(0.6,#D41C93),color-stop(0.75,#D41C93),color-stop(0.9,#D41C93),color-stop(1,#D41C93) );
+    -webkit-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color:transparent
+}
+.user-style.bluepurple{
+    background-image:-webkit-gradient( linear,left top,right top,color-stop(0,#1C5DD4),color-stop(0.15,#1C5DD4),color-stop(0.3,#1C5DD4),color-stop(0.45,#1C5DD4),color-stop(0.6,#5A33B7),color-stop(0.75,#5A33B7),color-stop(0.9,#5A33B7),color-stop(1,#5A33B7) );
+    -webkit-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color:transparent
+}
+.user-style.fire{
+    background-image:-webkit-gradient( linear,left top,right top,color-stop(0,#FF0000),color-stop(0.15,#FF0000),color-stop(0.3,#FF0000),color-stop(0.45,#FF4500),color-stop(0.6,#FF4500),color-stop(0.75,#FF4500),color-stop(0.9,#FFD700),color-stop(1,#FFD700) );
+    -webkit-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color:transparent
+}
+.user-style.unicorn{
+    background-image:-webkit-gradient( linear,left top,right top,color-stop(0,#6dcfca),color-stop(0.15,#90ee90),color-stop(0.3,#add8e6),color-stop(0.45,#87cefa),color-stop(0.6,#ffb6c1),color-stop(0.75,#f08080),color-stop(0.9,#ffa07a),color-stop(1,#fffa8c) );
+    -webkit-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color:transparent
+}
+.user-style.sunset{
+    background-image:-webkit-gradient( linear,left top,right top,color-stop(0,#db7093),color-stop(0.15,#db7093),color-stop(0.3,#ff7f50),color-stop(0.45,#ffd700),color-stop(0.6,#ffd700),color-stop(0.75,#ff7f50),color-stop(0.9,#db7093),color-stop(1,#db7093) );
+    -webkit-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color:transparent
+}
+.user-style.glitteradmin{
+    background:url(/img/user-glitters/glitteradmin.gif) 2px -10px repeat-x
+}
+.user-style.glitterred{
+    background:url(/img/user-glitters/red50.gif);
+}
+.user-style.reversed{
+    unicode-bidi:bidi-override;
+    direction:rtl;
+}
+.user-style.orange{
+    color:#ff7f27
+}
+.user-style.black{
+    color:#333
+}
+.user-style.pink{
+    color:#d41c93
+}
+.user-style.gold{
+    color:#eabf07
+}
+.user-style.blue{
+    color:#1c5dd4
+}
+.user-style.purple{
+    color:#5a33b7
+}
+.user-style.red{
+    color:#a94442
+}
+.user-style.darkgrey{
+    color:#4e4e4e
+}
+.user-style.cyan{
+    color:#008b8b
+}
+.user-style.salmon{
+    color:salmon
+}
+.user-style.navy{
+    color:#1a5276
+}
+.user-style.green{
+    color:#007a00
+}
+.user-style.maroon{
+    color:#650012
+}
+.user-style.white{
+    color:#fff
+}
+.user-style.lightpink{
+    color:#ffb6c1
+}
+.user-style.lightcoral{
+    color:#f08080
+}
+div {
+    opacity:1;
+    transition:opacity 500ms;
+}
+div.waa {
+    opacity:0;
+}
