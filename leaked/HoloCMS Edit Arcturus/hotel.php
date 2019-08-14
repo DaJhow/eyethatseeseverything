@@ -37,8 +37,8 @@ $_config['client'] = array(
 	'furnidata' 			 			=> 'http://localhost/gamedata/furnidata.xml',	
 	'external_figurepartlist' 			=> 'http://localhost/gamedata/figuredata.xml',	
 	'avatareditor_promohabbos' 			=> 'http://localhost/gamedata/hotlooks.xml',	
-	'flash_client_url' 	 				=> 'http://localhost/gordon/PRODUCTION-201805071207-546529762/',
-	'habbo_swf' 		 				=> 'arcturus_raw.swf'
+	'flash_client_url' 	 				=> 'http://localhost/gordon/PRODUCTION-201904011212-888653470/',
+	'habbo_swf' 		 				=> 'asmd.swf'
 );
 
 $ticket = time().sha1(rand(10000,99999));
@@ -68,30 +68,12 @@ $ticketrow = mysql_fetch_assoc($ticketsql);
       <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
    <body style="overflow:hidden;" class="loaded">
-<div class="habbo_head">
-<app-client-header>
-         <div class="row no-gutters client-header">
-             <div class="container-fluid header-container">
-                 <div class="col col-12 h-100 d-flex justify-content-between">
-                     <ul>
-                         <li><i class="icon habbo-icon"></i></li>
-                         <li class="seperator"><i class="icon navbar-seperator"></i></li>
-                         <li data-toggle="tooltip" data-title="Todos os amigos" data-placement="down"><a onClick="openNavigator('official_view')"><i class="icon"><img src="/img/website/bar-icons/rooms.png"></i></a></li>
-                         <li><a onClick="openCatalog()"><i class="icon"><img src="/img/website/bar-icons/shop.png"></i></a></li>
-                         <li><a onClick="openInventory('furni')"><i class="icon"><img src="/img/website/bar-icons/inventory.png"></i></a></li>
-                         <li><a onClick="openFriends()"><i class="icon"><img src="/img/website/bar-icons/friends.png"></i></a></li>
-                         <li><a onClick="naviButtons('achievements')"><i class="icon"><img src="/img/website/bar-icons/achievements.png"></i></a></li>
-                         <li><a onClick="naviButtons('clothes')"><i class="icon"><img src="/img/website/bar-icons/clothes.png"></i></a></li>
-                     </ul>
-                 </div>
-             </div>
-         </div>
-     </app-client-header><br><br>
-</div>
+
       <center>
          <div id="client-ui">
-         <!--<div class="client" id="client" style="height: calc(98.3% - 30px);height:-moz-calc(100% - 30px);top:initial;">-->
-         <div class="client" id="client" style="height: calc(98.3% - 70px);height:-moz-calc(100% - 30px);/* top:initial; */"><embed type="application/x-shockwave-flash" src="<?php echo $_config['client']['flash_client_url'] . $_config['client']['habbo_swf']; ?>" width="100%" height="100%" style="undefined" id="client" name="client" quality="high" base="<?php echo $_config['client']['flash_client_url']; ?>" allowscriptaccess="always" wmode="opaque" flashvars="client.allow.cross.domain=0&amp;client.notify.cross.domain=1&amp;connection.info.host=<?php echo $_config['client']['host']; ?>&amp;connection.info.port=<?php echo $_config['client']['port']; ?>&amp;site.url=<?php echo $Holo['url']; ?>&amp;url.prefix=<?php echo $Holo['url']; ?>&amp;client.reload.url=<?php echo $Holo['url']; ?>/me&amp;client.fatal.error.url=<?php echo $Holo['url']; ?>/me&amp;client.connection.failed.url=<?php echo $Holo['url']; ?>/me&amp;external.override.texts.txt=<?php echo $_config['client']['external_flash_texts_override']; ?>&amp;external.override.variables.txt=<?php echo $_config['client']['external_variables_override']; ?>&amp;external.variables.txt=<?php echo $_config['client']['external_variables']; ?>&amp;external.texts.txt=<?php echo $_config['client']['external_flash_texts']; ?>&amp;external.figurepartlist.txt=<?php echo $_config['client']['external_figurepartlist']; ?>&amp;flash.dynamic.avatar.download.configuration=<?php echo $_config['client']['flash_client_url']; ?>figuremap.xml&amp;productdata.load.url=<?php echo $_config['client']['productdata']; ?>&amp;furnidata.load.url=<?php echo $_config['client']['furnidata']; ?>&amp;use.sso.ticket=1&amp;spaweb=1&amp;has.identity=1&amp;sso.ticket=<?php echo $ticketrow['auth_ticket']; ?>&amp;processlog.enabled=1&amp;client.starting=Dabbzo is loading...&amp;flash.client.url=<?php echo $_config['client']['flash_client_url']; ?>&amp;flash.client.origin=popup&amp;ads.domain="></div>
+         <div class="client" id="client" style="height: calc(100% - 0px);height:-moz-calc(100% - 30px);top:initial;">
+         <!--<div class="client" id="client" style="height: calc(98.3% - 70px);height:-moz-calc(100% - 30px);/* top:initial; */">-->
+		 <embed type="application/x-shockwave-flash" src="<?php echo $_config['client']['flash_client_url'] . $_config['client']['habbo_swf']; ?>" width="100%" height="100%" style="undefined" id="client" name="client" quality="high" base="<?php echo $_config['client']['flash_client_url']; ?>" allowscriptaccess="always" wmode="opaque" flashvars="client.allow.cross.domain=0&amp;client.notify.cross.domain=1&amp;connection.info.host=<?php echo $_config['client']['host']; ?>&amp;connection.info.port=<?php echo $_config['client']['port']; ?>&amp;site.url=<?php echo $Holo['url']; ?>&amp;url.prefix=<?php echo $Holo['url']; ?>&amp;client.reload.url=<?php echo $Holo['url']; ?>/me&amp;client.fatal.error.url=<?php echo $Holo['url']; ?>/me&amp;client.connection.failed.url=<?php echo $Holo['url']; ?>/me&amp;external.override.texts.txt=<?php echo $_config['client']['external_flash_texts_override']; ?>&amp;external.override.variables.txt=<?php echo $_config['client']['external_variables_override']; ?>&amp;external.variables.txt=<?php echo $_config['client']['external_variables']; ?>&amp;external.texts.txt=<?php echo $_config['client']['external_flash_texts']; ?>&amp;external.figurepartlist.txt=<?php echo $_config['client']['external_figurepartlist']; ?>&amp;flash.dynamic.avatar.download.configuration=<?php echo $_config['client']['flash_client_url']; ?>figuremap.xml&amp;productdata.load.url=<?php echo $_config['client']['productdata']; ?>&amp;furnidata.load.url=<?php echo $_config['client']['furnidata']; ?>&amp;use.sso.ticket=1&amp;spaweb=1&amp;has.identity=1&amp;sso.ticket=<?php echo $ticketrow['auth_ticket']; ?>&amp;processlog.enabled=1&amp;client.starting=Dabbzo is loading...&amp;flash.client.url=<?php echo $_config['client']['flash_client_url']; ?>&amp;flash.client.origin=popup&amp;ads.domain="></div>
          <div class="hb-container" id="area-container">
             <h1 class="text" id="client-title"></h1>
             <div id="no-flash" style="display: none;">
@@ -150,7 +132,7 @@ $ticketrow = mysql_fetch_assoc($ticketsql);
          Client.addVariable("external.figurepartlist.txt", "<?php echo $_config['client']['external_figurepartlist']; ?>");
          Client.addVariable("avatareditor.promohabbos", "<?php echo $_config['client']['avatareditor_promohabbos']; ?>");
          Client.addVariable("productdata.load.url", "<?php echo $_config['client']['productdata']; ?>");
-         Client.addVariable("furnidata.load.url", "<?php echo $_config['client']['furnidata']; ?>");
+         Client.addVariable("furnidata.load.url", "<?php echo $_config['client']['furnidata']; ?>?v=1607201966");
          Client.addVariable("use.sso.ticket", "1");
          Client.addVariable("spaweb", "1");
          Client.addVariable("has.identity", "1");
@@ -234,21 +216,6 @@ $ticketrow = mysql_fetch_assoc($ticketsql);
         <div id="loader">Entering...<br><small>(100%)</small></div>
         <div class="loader-section section-left"></div>
         <div class="loader-section section-right"></div>
-     </div>
-     <div class="toolbar" id="toolbar" style="display: block;">
-        <div class="me-menu">
-           <div class="icon purse" onclick="openPurse()"></div>
-           <div class="icon rooms" onclick="naviButtons('myrooms')"></div>
-           <div class="icon achievements" onclick="naviButtons('achievements')"></div>
-           <div class="icon quests" onclick="naviButtons('quests')"></div>
-           <div class="icon clothes" onclick="naviButtons('clothes')"></div>
-        </div>
-        <div class="icon me" id="memenu" onclick="naviButtons('me')"><img src="https://www.habbo.com.tr/habbo-imaging/avatarimage?figure=<?php echo $myrow['look']; ?>&amp;headonly=1"></div>
-        <div class="icon friends" onclick="openFriends()"></div>
-        <div class="icon navigator" onclick="openNavigator('official_view')"></div>
-        <div class="icon events" onclick="naviButtons('events')"></div>
-        <div class="icon catalog" onclick="openCatalog()"></div>
-        <div class="icon inventory" onclick="openInventory('furni')"></div>
      </div>
 
      <div class="disconnected_filter" id="disconnected">
