@@ -6,3 +6,7 @@
 * Resim koleksiyonu.
 * Collection d'images.
 * Bildersammlung.
+
+- [x] Wulez r1
+- [x] Wulez r2
+- []  Wulez 3
